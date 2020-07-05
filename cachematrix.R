@@ -41,6 +41,6 @@ cacheSolve <- function(x, ...) {
         }
         OriMatrix <- x$get()
         invMatrix <- solve(OriMatrix, ...)
-        x$setsolve(invMatrix)
+        x$setInverse(invMatrix)
         invMatrix
 }
